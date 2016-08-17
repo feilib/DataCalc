@@ -45,6 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDay)).BeginInit();
@@ -185,11 +186,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 95);
+            this.label2.Location = new System.Drawing.Point(18, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 1;
             this.label2.Text = "出生：";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 36);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "1年3月3天\r\n43月2天\r\n2993天";
             // 
             // Form1
             // 
@@ -208,6 +218,7 @@
             this.Controls.Add(this.lblResult2);
             this.Controls.Add(this.lblResultSub);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblResult1);
             this.Controls.Add(this.dtp2);
@@ -241,6 +252,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
     }
 }
 
