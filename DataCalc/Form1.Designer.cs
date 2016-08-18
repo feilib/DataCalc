@@ -45,7 +45,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblBirthCount = new System.Windows.Forms.Label();
+            this.lblEndCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDay)).BeginInit();
@@ -54,7 +55,7 @@
             // dtp1
             // 
             this.dtp1.CustomFormat = "yyyy年MM月dd日 HH时mm分ss秒";
-            this.dtp1.Location = new System.Drawing.Point(12, 134);
+            this.dtp1.Location = new System.Drawing.Point(10, 53);
             this.dtp1.Name = "dtp1";
             this.dtp1.Size = new System.Drawing.Size(126, 21);
             this.dtp1.TabIndex = 0;
@@ -62,7 +63,7 @@
             // dtp2
             // 
             this.dtp2.CustomFormat = "yyyy年MM月dd日 HH时mm分ss秒";
-            this.dtp2.Location = new System.Drawing.Point(12, 173);
+            this.dtp2.Location = new System.Drawing.Point(10, 92);
             this.dtp2.Name = "dtp2";
             this.dtp2.Size = new System.Drawing.Size(126, 21);
             this.dtp2.TabIndex = 0;
@@ -70,7 +71,7 @@
             // lblResult1
             // 
             this.lblResult1.AutoSize = true;
-            this.lblResult1.Location = new System.Drawing.Point(143, 140);
+            this.lblResult1.Location = new System.Drawing.Point(141, 59);
             this.lblResult1.Name = "lblResult1";
             this.lblResult1.Size = new System.Drawing.Size(41, 12);
             this.lblResult1.TabIndex = 1;
@@ -79,7 +80,7 @@
             // lblResult2
             // 
             this.lblResult2.AutoSize = true;
-            this.lblResult2.Location = new System.Drawing.Point(143, 179);
+            this.lblResult2.Location = new System.Drawing.Point(141, 98);
             this.lblResult2.Name = "lblResult2";
             this.lblResult2.Size = new System.Drawing.Size(41, 12);
             this.lblResult2.TabIndex = 1;
@@ -89,7 +90,7 @@
             // 
             this.rbPlus.AutoSize = true;
             this.rbPlus.Checked = true;
-            this.rbPlus.Location = new System.Drawing.Point(12, 220);
+            this.rbPlus.Location = new System.Drawing.Point(10, 139);
             this.rbPlus.Name = "rbPlus";
             this.rbPlus.Size = new System.Drawing.Size(47, 16);
             this.rbPlus.TabIndex = 2;
@@ -100,7 +101,7 @@
             // rbMinuse
             // 
             this.rbMinuse.AutoSize = true;
-            this.rbMinuse.Location = new System.Drawing.Point(12, 242);
+            this.rbMinuse.Location = new System.Drawing.Point(10, 161);
             this.rbMinuse.Name = "rbMinuse";
             this.rbMinuse.Size = new System.Drawing.Size(47, 16);
             this.rbMinuse.TabIndex = 2;
@@ -109,21 +110,21 @@
             // 
             // nudYear
             // 
-            this.nudYear.Location = new System.Drawing.Point(71, 229);
+            this.nudYear.Location = new System.Drawing.Point(69, 148);
             this.nudYear.Name = "nudYear";
             this.nudYear.Size = new System.Drawing.Size(40, 21);
             this.nudYear.TabIndex = 3;
             // 
             // nudMonth
             // 
-            this.nudMonth.Location = new System.Drawing.Point(145, 229);
+            this.nudMonth.Location = new System.Drawing.Point(143, 148);
             this.nudMonth.Name = "nudMonth";
             this.nudMonth.Size = new System.Drawing.Size(40, 21);
             this.nudMonth.TabIndex = 3;
             // 
             // nudDay
             // 
-            this.nudDay.Location = new System.Drawing.Point(209, 229);
+            this.nudDay.Location = new System.Drawing.Point(207, 148);
             this.nudDay.Name = "nudDay";
             this.nudDay.Size = new System.Drawing.Size(40, 21);
             this.nudDay.TabIndex = 3;
@@ -131,7 +132,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 231);
+            this.label3.Location = new System.Drawing.Point(253, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 12);
             this.label3.TabIndex = 1;
@@ -140,7 +141,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(122, 231);
+            this.label4.Location = new System.Drawing.Point(120, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(17, 12);
             this.label4.TabIndex = 1;
@@ -149,7 +150,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(191, 231);
+            this.label5.Location = new System.Drawing.Point(189, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 12);
             this.label5.TabIndex = 1;
@@ -158,7 +159,7 @@
             // lblResultSub
             // 
             this.lblResultSub.AutoSize = true;
-            this.lblResultSub.Location = new System.Drawing.Point(97, 274);
+            this.lblResultSub.Location = new System.Drawing.Point(95, 188);
             this.lblResultSub.Name = "lblResultSub";
             this.lblResultSub.Size = new System.Drawing.Size(41, 12);
             this.lblResultSub.TabIndex = 1;
@@ -166,7 +167,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 269);
+            this.button1.Location = new System.Drawing.Point(10, 188);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -186,26 +187,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 66);
+            this.label2.Location = new System.Drawing.Point(167, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 1;
             this.label2.Text = "出生：";
             // 
-            // label6
+            // lblBirthCount
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 36);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "1年3月3天\r\n43月2天\r\n2993天";
+            this.lblBirthCount.AutoSize = true;
+            this.lblBirthCount.Location = new System.Drawing.Point(226, 9);
+            this.lblBirthCount.Name = "lblBirthCount";
+            this.lblBirthCount.Size = new System.Drawing.Size(59, 24);
+            this.lblBirthCount.TabIndex = 1;
+            this.lblBirthCount.Text = "1年3月3天\r\n2993天";
+            // 
+            // lblEndCount
+            // 
+            this.lblEndCount.AutoSize = true;
+            this.lblEndCount.Location = new System.Drawing.Point(77, 9);
+            this.lblEndCount.Name = "lblEndCount";
+            this.lblEndCount.Size = new System.Drawing.Size(59, 24);
+            this.lblEndCount.TabIndex = 1;
+            this.lblEndCount.Text = "1年3月3天\r\n2993天";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 305);
+            this.ClientSize = new System.Drawing.Size(297, 225);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.nudDay);
             this.Controls.Add(this.nudMonth);
@@ -218,7 +228,8 @@
             this.Controls.Add(this.lblResult2);
             this.Controls.Add(this.lblResultSub);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblEndCount);
+            this.Controls.Add(this.lblBirthCount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblResult1);
             this.Controls.Add(this.dtp2);
@@ -226,6 +237,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "日期计算";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudYear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDay)).EndInit();
@@ -252,7 +264,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblBirthCount;
+        private System.Windows.Forms.Label lblEndCount;
     }
 }
 
