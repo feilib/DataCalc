@@ -59,6 +59,7 @@ namespace DataCalc
 
         private string DateDiff(DateTime dt1, DateTime dt2)
         {
+            //比大小
             DateTime dtmax, dtmin;
             if (dt1 > dt2)
             {
@@ -73,7 +74,10 @@ namespace DataCalc
 
             int days = (dtmax - dtmin).Days;
             
+            //初始化计数器
             int year = 0, month = 0, day = 0;
+
+            //开始分年月日计算
             #region 计算年
             if (days >= 365)
             {
@@ -112,7 +116,7 @@ namespace DataCalc
             }
             #endregion
 
-            
+            //返回
             return $"{year}年{month}月{day}天";
         }
 
